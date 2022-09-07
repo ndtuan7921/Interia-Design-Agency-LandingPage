@@ -1,0 +1,100 @@
+.portfolio {
+  width: 100%;
+  background-color: #fff;
+  .portfolio-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    h2,
+    p {
+      margin-bottom: 1.75rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: var(--font-bold);
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      line-height: 1.6;
+    }
+  }
+  .carousel-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+
+    .owl-stage-outer {
+      width: 100%;
+      padding-bottom: 5rem;
+      overflow: hidden;
+
+      .owl-stage {
+        display: flex;
+        width: 1000%;
+        transition: all 0.3s ease-out;
+
+        .owl-item {
+          width: 10%;
+          .post {
+            &-figure {
+              transition: all 0.3s ease-in-out;
+              box-shadow: 10px 35px 40px rgb(0 0 0 / 20%);
+            }
+            &-title {
+              margin-top: 1.75rem;
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 1.5;
+
+              a {
+                color: #2d2d2d;
+                &:hover {
+                  color: var(--yellow);
+                }
+              }
+            }
+            &-description {
+              margin-top: 9px;
+              color: rgba(0, 0, 0, 0.6);
+              display: flex;
+              flex-wrap: wrap;
+              column-gap: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 111px;
+      height: 57px;
+      bottom: 0;
+      background-color: var(--dark-gray);
+
+      .owl-pre,
+      .owl-next {
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: #fff;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

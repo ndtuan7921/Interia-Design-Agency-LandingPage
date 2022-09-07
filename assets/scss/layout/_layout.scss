@@ -1,0 +1,18 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 3rem 0;
+
+  &__title,
+  &__title-center {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: var(--mb-1);
+  }
+}
+
+/*=============== LAYOUT ===============*/
+
+.flex {
+  display: flex;
+}

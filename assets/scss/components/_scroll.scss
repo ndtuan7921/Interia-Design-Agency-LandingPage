@@ -1,0 +1,28 @@
+.scrollup {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  line-height: 56px;
+  color: #000000;
+  background: #ffdc25;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  transform: translate3d(0, 100px, 0);
+  box-shadow: 3px 8px 20px 0 rgb(255 220 37 / 20%);
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--dark-gray);
+    color: #fff;
+  }
+}
+
+.scrollup.active {
+  transform: translate3d(0, 0, 0);
+}

@@ -1,0 +1,25 @@
+/*=============== BUTTON ===============*/
+.button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: -0.03em;
+    text-align: center;
+    background-color: var(--yellow);
+    color: #000;
+    box-shadow: 3px 8px 20px 0 rgb(255 220 37 / 20%);
+    padding: 1.25rem 4rem;
+    line-height: 1.25;
+    min-width: 272px;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: var(--font-bold);
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #3B3B3B;
+        color: #fff;
+
+    }
+}
